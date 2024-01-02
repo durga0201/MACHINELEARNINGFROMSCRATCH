@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split 
 import matplotlib.pyplot as plt 
 
-
 class LinearRegression_GD():
     def __init__(self,learning_rate=0.01,iterations=10000,eps=1e-6):
         self.learning_rate = learning_rate
@@ -125,4 +124,5 @@ class LinearRegressio_BGD():
 # Example usage with mini-batch gradient descent
 X = np.array([[1], [2], [3], [4], [5], [6], [7], [8]])
 y = np.array([2, 4, 6, 8, 10, 12, 14, 16])
+
 LinearRegression_BGD().fit(X, y, "mini-batch")
