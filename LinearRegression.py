@@ -60,7 +60,7 @@ y = np.array([2,4,6,8,10,12,14,16])
 LinearRegression_GD().fit(X, y, "standard")
 
 
-class LinearRegressio_BGD():
+class LinearRegression_BGD():
     def __init__(self, learning_rate=0.01, iterations=10000, eps=1e-6, batch_size=2):
         self.learning_rate = learning_rate
         self.iterations = iterations
